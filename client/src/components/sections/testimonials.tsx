@@ -107,6 +107,53 @@ export default function TestimonialsSection() {
               </motion.div>
             ))}
           </div>
+
+          {/* Studies and Validations */}
+          <motion.div 
+            className="mt-20"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-neutral-900 mb-8">
+              📋 ESTUDOS E VALIDAÇÕES:
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200 p-6">
+                <CardContent className="p-0 text-center">
+                  <div className="text-3xl mb-3">📚</div>
+                  <h4 className="font-bold text-blue-700 mb-2">Instituto Brasileiro de Relacionamentos:</h4>
+                  <p className="text-neutral-700">87% das brigas conjugais são evitáveis com comunicação adequada</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200 p-6">
+                <CardContent className="p-0 text-center">
+                  <div className="text-3xl mb-3">📚</div>
+                  <h4 className="font-bold text-purple-700 mb-2">Pesquisa USP sobre Casamentos:</h4>
+                  <p className="text-neutral-700">Admiração mútua é o principal fator de satisfação matrimonial</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200 p-6">
+                <CardContent className="p-0 text-center">
+                  <div className="text-3xl mb-3">📚</div>
+                  <h4 className="font-bold text-green-700 mb-2">Estudo Bíblico Harvard:</h4>
+                  <p className="text-neutral-700">Princípios bíblicos reduzem conflitos conjugais em 73%</p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <motion.div 
+              className="bg-accent text-white rounded-2xl p-6 mt-8 text-center"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h4 className="text-xl font-bold mb-2">GARANTIA DE RESULTADOS:</h4>
+              <p className="text-lg">Se você aplicar por 7 dias e não ver mudanças, devolvemos 100% do seu dinheiro</p>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

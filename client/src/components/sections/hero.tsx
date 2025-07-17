@@ -34,8 +34,12 @@ export default function HeroSection() {
             </h2>
             
             {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-blue-100 mb-4 max-w-3xl mx-auto">
               <strong>2.547 Mulheres Cristãs</strong> já pararam de brigar e começaram a ser admiradas usando este método de 7 atitudes
+            </p>
+            
+            <p className="text-lg md:text-xl text-blue-200 mb-8 max-w-2xl mx-auto italic">
+              Mesmo se você já tentou de tudo e sente que virou "a chata da casa"...
             </p>
             
             {/* Hero CTA */}

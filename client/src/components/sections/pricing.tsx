@@ -203,6 +203,69 @@ export default function PricingSection() {
               </div>
             </div>
           </motion.div>
+
+          {/* Why This Promotion */}
+          <motion.div 
+            className="bg-gradient-to-r from-blue-50 to-primary/10 border border-primary/20 rounded-2xl p-8 mt-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-primary mb-6">
+                Por que tô fazendo essa promoção?
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-neutral-700">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
+                  <span>Quero que mais mulheres cristãs tenham casamentos felizes</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
+                  <span>Quanto mais casais restaurados, mais glória para Deus</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
+                  <span>Seu testemunho vai inspirar outras mulheres</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Payment Facilities */}
+          <motion.div 
+            className="bg-white border-2 border-accent/20 rounded-2xl p-8 mt-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-6 flex items-center justify-center">
+                <CreditCard className="w-8 h-8 mr-2 text-accent" />
+                FACILIDADES DE PAGAMENTO
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div className="flex items-center gap-2">
+                  <Check className="w-5 h-5 text-accent" />
+                  <span className="text-neutral-700">Pagamento 100% seguro (cartão, PIX, boleto)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-5 h-5 text-accent" />
+                  <span className="text-neutral-700">Acesso imediato após confirmação</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-5 h-5 text-accent" />
+                  <span className="text-neutral-700">Funciona em qualquer dispositivo</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-5 h-5 text-accent" />
+                  <span className="text-neutral-700">Suporte técnico incluído</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

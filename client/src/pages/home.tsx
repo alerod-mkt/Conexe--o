@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import HeroSection from "@/components/sections/hero";
 import ProblemSection from "@/components/sections/problem";
+import UrgencyLostDaysSection from "@/components/sections/urgency-lost-days";
 import SolutionSection from "@/components/sections/solution";
 import AuthorSection from "@/components/sections/author";
 import TestimonialsSection from "@/components/sections/testimonials";
@@ -9,7 +10,9 @@ import ProductDetailsSection from "@/components/sections/product-details";
 import PricingSection from "@/components/sections/pricing";
 import UrgencySection from "@/components/sections/urgency";
 import FaqSection from "@/components/sections/faq";
+import FinalDecisionSection from "@/components/sections/final-decision";
 import ContactSection from "@/components/sections/contact";
+import LastOpportunitySection from "@/components/sections/last-opportunity";
 import FooterSection from "@/components/sections/footer";
 import FloatingCTA from "@/components/ui/floating-cta";
 
@@ -29,6 +32,7 @@ export default function Home() {
     >
       <HeroSection />
       <ProblemSection />
+      <UrgencyLostDaysSection />
       <SolutionSection />
       <AuthorSection />
       <TestimonialsSection />
@@ -36,7 +40,9 @@ export default function Home() {
       <PricingSection />
       <UrgencySection />
       <FaqSection />
+      <FinalDecisionSection />
       <ContactSection />
+      <LastOpportunitySection />
       <FooterSection />
       <FloatingCTA />
     </motion.div>

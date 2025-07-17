@@ -18,15 +18,27 @@ export default function FaqSection() {
     },
     {
       question: "E se eu for tímida ou não souber como conversar com ele?",
-      answer: "Perfeito! O método foi criado exatamente para mulheres tímidas. Você tem scripts prontos do que falar, como falar e quando falar. Tudo mastigadinho para você só aplicar."
+      answer: "Perfeito! O método tem exemplos práticos de cada conversa. Você vai saber exatamente o que falar, como falar e quando falar. Mesmo mulheres tímidas conseguem."
     },
     {
-      question: "Funciona mesmo em casamentos com problemas há muito tempo?",
-      answer: "Sim! Quanto mais tempo de problema, mais rápido é o resultado. Maridos que estão cansados de brigas respondem super rápido quando veem que você mudou de verdade."
+      question: "O que acontece depois que eu comprar?",
+      answer: "Você recebe o acesso imediato na sua área de membros. Pode começar hoje mesmo se quiser. Tudo fica disponível 24 horas no seu celular."
     },
     {
-      question: "O que acontece se não der certo comigo?",
-      answer: "Você tem 7 dias para testar. Se não funcionar (o que é quase impossível), devolvemos 100% do seu dinheiro. Sem pergunta, sem enrolação."
+      question: "Vai ter alguém para me ajudar se eu tiver dúvidas?",
+      answer: "Claro! Você tem suporte comigo por email. Pode mandar suas dúvidas que respondo em até 24 horas. Não vai ficar perdida."
+    },
+    {
+      question: "A garantia é real mesmo?",
+      answer: "Totalmente real! Se você aplicar por 7 dias e não ver mudanças, é só mandar um email que devolvemos 100% do dinheiro. Simples assim."
+    },
+    {
+      question: "Por que o preço está tão baixo?",
+      answer: "Porque é uma promoção especial para testar o método com mais mulheres. Depois de domingo, volta ao preço normal de R$ 97,00."
+    },
+    {
+      question: "Meu marido vai perceber que estou usando um método?",
+      answer: "Não! As atitudes são naturais e bíblicas. Ele vai perceber que você mudou, mas vai achar que foi decisão sua. Vai te admirar ainda mais por isso."
     }
   ];
 
