@@ -46,6 +46,10 @@ export default function HeroSection() {
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
               <Button 
                 size="lg" 
+                onClick={() => {
+                  const element = document.getElementById('pricing');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="bg-secondary hover:bg-amber-600 text-primary font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <Play className="w-5 h-5 mr-2" />

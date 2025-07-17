@@ -11,10 +11,10 @@ import PricingSection from "@/components/sections/pricing";
 import UrgencySection from "@/components/sections/urgency";
 import FaqSection from "@/components/sections/faq";
 import FinalDecisionSection from "@/components/sections/final-decision";
-import ContactSection from "@/components/sections/contact";
 import LastOpportunitySection from "@/components/sections/last-opportunity";
 import FooterSection from "@/components/sections/footer";
 import FloatingCTA from "@/components/ui/floating-cta";
+import Header from "@/components/ui/header";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,18 +30,28 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-background overflow-x-hidden"
     >
-      <HeroSection />
+      <Header />
+      <div id="hero">
+        <HeroSection />
+      </div>
       <ProblemSection />
       <UrgencyLostDaysSection />
       <SolutionSection />
-      <AuthorSection />
-      <TestimonialsSection />
+      <div id="author">
+        <AuthorSection />
+      </div>
+      <div id="testimonials">
+        <TestimonialsSection />
+      </div>
       <ProductDetailsSection />
-      <PricingSection />
+      <div id="pricing">
+        <PricingSection />
+      </div>
       <UrgencySection />
-      <FaqSection />
+      <div id="faq">
+        <FaqSection />
+      </div>
       <FinalDecisionSection />
-      <ContactSection />
       <LastOpportunitySection />
       <FooterSection />
       <FloatingCTA />

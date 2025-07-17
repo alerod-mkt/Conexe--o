@@ -20,6 +20,13 @@ export default function FloatingCTA() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
+  const scrollToPricing = () => {
+    const element = document.getElementById('pricing');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   if (!isMobile) return null;
 
   return (
@@ -32,7 +39,10 @@ export default function FloatingCTA() {
           transition={{ duration: 0.3 }}
           className="fixed bottom-0 left-0 right-0 bg-secondary p-4 z-50 shadow-lg"
         >
-          <Button className="w-full bg-primary text-white font-bold py-3 rounded-full text-sm">
+          <Button 
+            onClick={scrollToPricing}
+            className="w-full bg-primary text-white font-bold py-3 rounded-full text-sm"
+          >
             QUERO TRANSFORMAR MEU CASAMENTO - R$ 27,00
           </Button>
         </motion.div>

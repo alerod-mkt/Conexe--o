@@ -128,6 +128,10 @@ export default function FinalDecisionSection() {
             </p>
             <Button 
               size="lg"
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="bg-secondary hover:bg-amber-600 text-primary font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
               🚀 SIM, QUERO TRANSFORMAR MEU CASAMENTO AGORA! - R$ 27,00

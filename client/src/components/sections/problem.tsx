@@ -136,6 +136,10 @@ export default function ProblemSection() {
             <p className="text-2xl font-semibold text-neutral-900 mb-8">E você? Em qual fase está?</p>
             <Button 
               size="lg"
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="bg-primary hover:bg-blue-800 text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               QUERO SAIR DESSA SITUAÇÃO AGORA

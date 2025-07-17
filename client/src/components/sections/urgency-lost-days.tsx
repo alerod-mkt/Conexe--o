@@ -191,6 +191,10 @@ export default function UrgencyLostDaysSection() {
             </p>
             <Button 
               size="lg"
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               NÃO! QUERO MUDAR ISSO AGORA

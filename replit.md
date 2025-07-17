@@ -121,3 +121,15 @@ The application is structured as a single-page landing page with multiple sectio
 **Problem**: Type-safe database operations with good developer experience
 **Solution**: Drizzle ORM with Zod schema validation
 **Benefits**: Type safety, migration management, schema validation
+
+## Recent Changes: Latest modifications with dates
+
+- January 17, 2025: 
+  - Removed "Ainda tem dúvidas" contact section
+  - Changed branding from "Truque da Briga Zero" to "Conexão Conjugal"
+  - Added header with navigation menu and logo
+  - Updated footer with disclaimer text and proper anchor links
+  - Removed social media icons from footer
+  - Fixed numbered day cards in product details section
+  - Made all CTA buttons redirect to pricing section
+  - Added scroll offset for fixed header navigation

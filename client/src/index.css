@@ -116,6 +116,12 @@
     animation: pulse 3s infinite;
   }
 
+  /* Header offset for anchor links */
+  #hero, #author, #testimonials, #pricing, #faq {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+
   @keyframes fadeIn {
     from { 
       opacity: 0; 

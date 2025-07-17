@@ -53,6 +53,10 @@ export default function LastOpportunitySection() {
             >
               <Button 
                 size="lg"
+                onClick={() => {
+                  const element = document.getElementById('pricing');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="bg-secondary hover:bg-amber-600 text-primary font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
               >
                 🔥 QUERO GARANTIR MINHA TRANSFORMAÇÃO AGORA! - R$ 27,00
@@ -77,6 +81,10 @@ export default function LastOpportunitySection() {
               
               <Button 
                 size="lg"
+                onClick={() => {
+                  const element = document.getElementById('pricing');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="bg-accent hover:bg-green-600 text-white font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl animate-pulse-slow"
               >
                 🚀 QUERO MINHA UNIDADE PROMOCIONAL! - R$ 27,00

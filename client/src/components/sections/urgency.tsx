@@ -82,6 +82,10 @@ export default function UrgencySection() {
           >
             <Button 
               size="lg"
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="bg-yellow-400 hover:bg-yellow-500 text-red-800 font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl animate-pulse-slow"
             >
               🔥 QUERO GARANTIR MINHA VAGA AGORA - R$ 27,00

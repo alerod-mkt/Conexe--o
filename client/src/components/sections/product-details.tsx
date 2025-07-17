@@ -5,13 +5,13 @@ import { BookOpen, Target, Wrench, Smartphone } from "lucide-react";
 
 export default function ProductDetailsSection() {
   const sevenAttitudes = [
-    { day: 1, title: "Domingo do Perdão", description: "Como liberar mágoas sem ser capacho", color: "red" },
-    { day: 2, title: "Segunda da Transparência", description: "Jeito de se abrir sem parecer fraca", color: "blue" },
-    { day: 3, title: "Terça do Amor", description: "Gestos que despertam desejo instantâneo", color: "green" },
-    { day: 4, title: "Quarta do Diálogo", description: "Conversas que conectam sem brigar", color: "yellow" },
-    { day: 5, title: "Quinta do Respeito", description: "Jeito de exaltar ele sem bajular", color: "purple" },
-    { day: 6, title: "Sexta da Gratidão", description: "Palavras que fazem ele se sentir herói", color: "indigo" },
-    { day: 7, title: "Sábado da Valorização", description: "Atitudes que fazem ele se sentir rei", color: "emerald" }
+    { day: 1, title: "Domingo do Perdão", description: "Como liberar mágoas sem ser capacho", bgColor: "bg-red-500", textColor: "text-red-700", cardBg: "from-red-50 to-red-100", cardBorder: "border-red-200" },
+    { day: 2, title: "Segunda da Transparência", description: "Jeito de se abrir sem parecer fraca", bgColor: "bg-blue-500", textColor: "text-blue-700", cardBg: "from-blue-50 to-blue-100", cardBorder: "border-blue-200" },
+    { day: 3, title: "Terça do Amor", description: "Gestos que despertam desejo instantâneo", bgColor: "bg-green-500", textColor: "text-green-700", cardBg: "from-green-50 to-green-100", cardBorder: "border-green-200" },
+    { day: 4, title: "Quarta do Diálogo", description: "Conversas que conectam sem brigar", bgColor: "bg-yellow-500", textColor: "text-yellow-700", cardBg: "from-yellow-50 to-yellow-100", cardBorder: "border-yellow-200" },
+    { day: 5, title: "Quinta do Respeito", description: "Jeito de exaltar ele sem bajular", bgColor: "bg-purple-500", textColor: "text-purple-700", cardBg: "from-purple-50 to-purple-100", cardBorder: "border-purple-200" },
+    { day: 6, title: "Sexta da Gratidão", description: "Palavras que fazem ele se sentir herói", bgColor: "bg-indigo-500", textColor: "text-indigo-700", cardBg: "from-indigo-50 to-indigo-100", cardBorder: "border-indigo-200" },
+    { day: 7, title: "Sábado da Valorização", description: "Atitudes que fazem ele se sentir rei", bgColor: "bg-emerald-500", textColor: "text-emerald-700", cardBg: "from-emerald-50 to-emerald-100", cardBorder: "border-emerald-200" }
   ];
 
   const tools = [
@@ -88,13 +88,13 @@ export default function ProductDetailsSection() {
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <Card className={`card-hover bg-gradient-to-br from-${attitude.color}-50 to-${attitude.color}-100 border-${attitude.color}-200 p-4`}>
+                      <Card className={`card-hover bg-gradient-to-br ${attitude.cardBg} ${attitude.cardBorder} p-4`}>
                         <CardContent className="p-0">
                           <div className="text-center">
-                            <div className={`w-12 h-12 bg-${attitude.color}-500 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-3`}>
+                            <div className={`w-12 h-12 ${attitude.bgColor} text-white rounded-full flex items-center justify-center font-bold mx-auto mb-3`}>
                               {attitude.day}
                             </div>
-                            <h5 className={`font-bold text-${attitude.color}-700 mb-2 text-sm`}>{attitude.title}</h5>
+                            <h5 className={`font-bold ${attitude.textColor} mb-2 text-sm`}>{attitude.title}</h5>
                             <p className="text-xs text-neutral-600">{attitude.description}</p>
                           </div>
                         </CardContent>
