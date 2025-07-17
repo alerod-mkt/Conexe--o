@@ -133,3 +133,6 @@ The application is structured as a single-page landing page with multiple sectio
   - Fixed numbered day cards in product details section
   - Made all CTA buttons redirect to pricing section
   - Added scroll offset for fixed header navigation
+  - Created realistic SVG avatars for testimonial cards instead of simple initials
+  - Enhanced "Conexão Conjugal" logo with heart icon and elegant serif font
+  - Improved logo component with reusable design for header and footer

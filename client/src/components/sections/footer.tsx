@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
+import Logo from "@/components/ui/logo";
 
 export default function FooterSection() {
   const scrollToSection = (sectionId: string) => {
@@ -34,7 +35,25 @@ export default function FooterSection() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-secondary mb-4">Conexão Conjugal</h3>
+              <div className="mb-4">
+                <div className="flex items-center gap-2">
+                  <div className="relative">
+                    <div className="w-10 h-10 text-secondary fill-current">
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                      </svg>
+                    </div>
+                    <div className="w-5 h-5 text-pink-400 fill-current absolute top-0.5 left-0.5">
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-3xl font-bold text-secondary font-serif tracking-wide">
+                    Conexão Conjugal
+                  </h3>
+                </div>
+              </div>
               <p className="text-neutral-300 mb-6">
                 Transformando casamentos através de princípios bíblicos e métodos comprovados. 
                 Mais de 2.500 mulheres já conquistaram a admiração e o respeito de seus maridos.
